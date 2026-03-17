@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git status)",
+      "Bash(git diff*)",
+      "Bash(git log*)",
+      "Bash(git add*)",
+      "Bash(git commit*)",
+      "Bash(git push*)",
+      "Bash(git remote*)",
+      "Bash(dotnet build*)",
+      "Bash(dotnet test*)",
+      "Bash(dotnet restore*)",
+      "Bash(dotnet new*)",
+      "Bash(dotnet sln*)",
+      "Bash(dotnet add*)",
+      "Bash(msbuild*)",
+      "Bash(ls*)",
+      "Bash(mkdir*)",
+      "Bash(cat*)"
+    ]
+  }
+}

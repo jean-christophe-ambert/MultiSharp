@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011"
+                 xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="MultiSharp.VSIX" Version="0.1.0" Language="fr-FR" Publisher="MultiSharp" />
+    <DisplayName>MultiSharp</DisplayName>
+    <Description xml:space="preserve">Extension Visual Studio d'analyse, correction et refactoring de code C#, inspirée de ReSharper. Zéro dépendance dans vos projets.</Description>
+    <Tags>C#, refactoring, code analysis, roslyn</Tags>
+    <ProjectUrl>https://github.com/MultiSharp/MultiSharp</ProjectUrl>
+    <License>LICENSE.txt</License>
+    <Icon>Resources\MultiSharp.png</Icon>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0, 18.0)" />
+    <InstallationTarget Id="Microsoft.VisualStudio.Professional" Version="[17.0, 18.0)" />
+    <InstallationTarget Id="Microsoft.VisualStudio.Enterprise" Version="[17.0, 18.0)" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName=".NET Framework" d:Source="Auto" Version="[4.7.2,)" />
+  </Dependencies>
+  <Prerequisites>
+    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[17.0,18.0)" DisplayName="Visual Studio core editor" />
+  </Prerequisites>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|MultiSharp.VSIX;PkgdefProjectOutputGroup|" />
+  </Assets>
+</PackageManifest>
